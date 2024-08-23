@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/Styles.css">
+  <title>formulario</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="descricao">
+      <h2>Crie e compartilhe <br> seu evento.</h2>
+      <strong class="titulo"> O primeiro passo, é preencher esse formulário de inscrição.</strong>
+    </header>
+  </div>
+</body>
+
+<main>
+  <form class="formulario">
+
+    <h2>Informações do Evento</h2>
+
+    <label for="titulo-evento">Título do evento</label>
+    <input type="text" id="titulo-evento" name="titulo-evento" placeholder="Digite o nome do evento" required>
+
+    <label for="url-evento">URL do evento</label>
+    <input type="url" id="url-evento" name="url-evento" placeholder="Digite a URL do evento" required>
+
+    <label for="informacao-evento">Informações sobre o evento</label>
+    <textarea id="informacao-evento" name="informacao-evento" placeholder="Descreva o evento"></textarea>
+
+    <label for="categoria">Categoria</label>
+    <select id="categoria" name="categoria">
+      <option value="ao-vivo">Ao Vivo</option>
+      <option value="gravado">podcast</option>
+      <option value="gravado">mentoria</option>
+
+    </select>
+
+    <h2>Privacidade</h2>
+
+    <label for="email-criador">E-mail do administrador</label>
+    <input type="email" id="email-criador" name="email-criador" placeholder="Digite o e-mail do administrador" required>
+
+    <label for="senha-participantes">Senha de acesso para os participantes</label>
+    <input type="password" id="senha-participantes" name="senha-participantes" placeholder="Digite a senha" required>
+
+    <label for="evento-privado">
+      <input type="checkbox" id="evento-privado" name="evento-privado">
+      Evento privado
+    </label>
+
+    <h2>Dia e hora</h2>
+
+    <label for="data">Data</label>
+    <input type="date" id="data" name="data" required>
+
+    <label for="hora-inicio">Hora de início</label>
+    <input type="time" id="hora-inicio" name="hora-inicio" required>
+
+    <label for="hora-fim">Hora de término</label>
+    <input type="time" id="hora-fim" name="hora-fim">
+
+    <button type="submit">Salvar</button>
+  </form>
+  </body>
+
+</html>
+
+</main>
